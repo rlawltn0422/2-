@@ -9,6 +9,7 @@
     
     <link rel ="stylesheet" href="css/login.css">
     
+    
 </head>
 <body>
     <!--한국어, 영어 선택 창-->
@@ -19,7 +20,8 @@
         </select>
     </div>
     <div class="logo image">
-        <img src="img/2team logo.jpg">
+        <a href="file:///C:/study/2team/COVID-19%20main%20page.html" target="_blank" title="메인 페이지 보러가기"><img src="img/2team logo.jpg"></a>
+        
     </div>
     <br>
 
@@ -34,16 +36,16 @@
         </div>
 
         <div class="login-button">
-        <div button type="login" class="btn btn-primary">로그인</button>
+        <div button type="login" class="btn btn-primary" onclick="location.href='file:///C:/study/2team/COVID-19%20main%20page%20after%20login%20.html'">로그인</button>
+            
         </div>
         
     </div>
     <br>
     <div class="form-check">
         <div>
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">아이디 저장</label>
-        <input type="checkbox" name="chkIdsave" > 로그인 상태 유지
+        <input type="radio" name="cblogin" value="ID stay" >아이디 저장
+        <input type="radio" name="cblogin" value="login stay"> 로그인 상태 유지
         </div>
     </div>
         
@@ -66,7 +68,8 @@
                 </div>
                 <div button type="button"  class="btn btn-light btn-lg"> 비밀번호 찾기</button>
                 </div>
-                <div button type="button" class="btn btn-light btn-lg"> 회원가입</button>
+                <div button type="button" class="btn btn-light btn-lg" onclick="location.href='file:///C:/study/2team/COVID-19%20sign%20up.html'"> 회원가입</button>
+                    
                 </div>
           </div>
           <br><br>
