@@ -1,0 +1,31 @@
+.button-group{
+    text-align:center;
+}
+body{
+    background-color:white;
+    font-family: Dotum,'고딕체',Helvetica,sans-serif;
+}
+.btn.btn-primary.btn-lg{
+    border:1px solid #66b8e1;
+    background-color:white;
+    color:black;
+    font-size:100%;
+    font-weight: bold;
+    width:250px;
+}
+.form-check{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.login-button{
+    text-align:center;
+}
+.btn.btn-primary{
+    border:1px solid #66b8e1;
+    background-color: #66b8e1;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:20px;
+}
