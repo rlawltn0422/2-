@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코로나 정책 알리미</title>
+    <link rel="stylesheet" href="css/company_mobile.css" media="(max-width:600px)">
+    <link rel="stylesheet" href="css/company.css" media="(min-width:600px)">
+    
+    <style>
+          
+    
+        #nav li:hover ul li{
+            height: 35;
+            overflow:visible;
+            padding: 0;
+        }
+        #footerNav {
+            list-style: none;
+            height: 40px;
+            padding: 5px 10px;
+            background-color: #66b8e1;
+        }
+        #footerNav li {
+            display:inline-block;
+            position: center;
+            margin: 5px 30px;
+            padding: 0;
+        }
+        #footerNav li a {
+            display: black;
+            font-family: "돋움체";
+            font-weight: bold;
+            font-size: 20px;
+            padding: 7px 8px;
+            margin: 0;
+            color: white;
+            text-decoration: none;
+        }
+        #footer {
+            min-height: 100%;
+        }
+
+        #nav li a {
+            font-family: "굴림";
+            font-weight: bold;
+            font-size: 18px;
+            padding: 7px 8px;
+            color: white;
+            float: 20%;
+            text-decoration: none;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        #nav li:hover>a {
+            background: #66b8e1; 
+            color: black;
+            margin: 0;
+            padding: 5px;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0%;
+            top: 40px;
+            width: 105px;
+            background: #66b8e1; 
+            text-align: center;
+            opacity: 0;
+        }
+
+
+
+        #bye{
+            float: right;
+        }
+        #name{
+            width:300px;
+        }
+        #id{
+            width:300px;
+        }
+        #Email{
+            width:300px;
+        }
+        #address{
+            width:300px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+ <div class="logo-box">
+     <a href="file:///C:/study/2team/COVID-19%20main%20page.html" target="_blank" title="메인 페이지 보러가기">
+     <img src="img/2team logo.jpg" alt="logo" class="logo" width="150px" height="150px">
+    <div>
+       <ul id="nav">
+         <li> <a href="#">위치별</a> </li>
+         <li> <a href="#" button type="button" id="btnJoin" onclick="location.href='file:///C:/study/2team%20-%20%EC%A0%9C%EC%B6%9C%EC%9A%A9/test1.html'">
+            실시간현황</a> </li>
+         <li> <a href="#">게시판</a> </li>
+         <li> <a href="#" button type="button" id="btnJoin" onclick="location.href='file:///C:/study/2team%20-%20%EC%A0%9C%EC%B6%9C%EC%9A%A9/COVID-19%20main%20page.html'">로그아웃</a> </li>    
+        <li> <a href="#" button type="button" id="btnJoin" onclick="location.href='file:///C:/study/2team%20-%20%EC%A0%9C%EC%B6%9C%EC%9A%A9/Mypage.html'" >마이페이지</a> </li>
+
+       </ul>
+    </div>
+        <fieldset>
+            <legend> 회원 정보</legend>
+            <table>
+                    <input type="radio" name="r1" value="man" checked disabled> 남자 
+                    <input type="radio" name="r1" value="womam" disabled> 여자 
+                <tr>
+                    <td><label for="name"> 이름 </label></td>
+                    <td><input type="text" id="name" disabled placeholder="홍길동" id="name"></td> 
+                    </tr>
+                <tr>
+                    <td><label for="id"> 아이디 </label></td>
+                    <td><input type="text" id="id" disabled placeholder="ID1234" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email"> 이메일 </label></td>
+                    <td><input type="text" id="Email" disabled placeholder="gildong1234@gmail.com" id="Email"></td>  <td><button value="버튼4"> 이메일 변경</button></td>
+                </tr>
+                <tr>
+                    <td><label for="address" > 주소 </label></td>
+                    <td><input  type="text" id="address" disabled placeholder="서울시 노원구 상계로 64 화랑빌딩 7F" id="Email"></td>  <td><button value="버튼4"> 주소 변경</button></td>
+                </tr>
+                <tr>
+                 <td><button value="버튼5"> 비밀번호 변경하기</button></td>
+                </tr><br><br>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> 접종여부</legend>
+                    <input type="radio" name="r2" value="미접종" disabled> 미접종
+                    <input type="radio" name="r2" value="1차" disabled> 1차
+                    <input type="radio" name="r2" value="2차" checked disabled> 2차
+                    <input type="radio" name="r2" value="3차" disabled> 3차
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> 격리정보 및 현황</legend>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> 나의 문의내역 </legend>
+            <table> 
+                <br><br><br><br><br><br><br>
+            </table>
+        </fieldset>
+        <br>
+            <td><button id="bye" value="버튼10"> 회원탈퇴</button></td>
+        <br>
+        <hr>
+        <ul id="footerNav" >
+            <li><a href="#"> 회사소개 </a></li>
+            <li><a href="#"> 이용약관 </a></li>
+            <li><a href="#"> 개인정보처리방침 </a></li>
+        </ul>
+        <hr>
+        <p style="text-align:center" id="footercontent">
+            상호명 : 코로나정책알리미<br>
+            연락처 : 02-123-1234
+        </p>
+        </div>
+</body>
+</html>
